@@ -68,7 +68,7 @@ def floyd_warshall():
 	return dist	 
 
 distances = floyd_warshall()
-def final_exchange(cur1, cur2):
+def max_exchange(cur1, cur2):
 	global distances
 	try: 
 		return_exchange = 10**(-1*distances[cur1][cur2])
@@ -76,15 +76,6 @@ def final_exchange(cur1, cur2):
 	except: 
 		return float('inf')
 
-
-# print "here!"
-for cur1 in currencies:
-	for cur2 in currencies:
-		a = 2
-		print order[cur1][cur2]
-		print final_exchange(cur1, cur2)
-
-
-
-
+def get_order(cur1, cur2):
+	return order[cur1][cur2]
 	
