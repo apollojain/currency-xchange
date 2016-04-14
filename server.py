@@ -14,6 +14,7 @@ def index():
 def submission():
 	form_from = request.form['from']
 	form_to = request.form['to']
+	print form_from + " -> " + form_to
 	rate = str(max_exchange(form_from, form_to))
   	graph = get_order(form_from, form_to)
 	create_dag(form_from, form_to, graph)

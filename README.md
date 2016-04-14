@@ -17,7 +17,13 @@ We can get the original exchange rate by doing 10^(-(-log(r_1) - log(r_2) - ... 
 
 How to use
 ------------
-Want to use this file? Simply download it and then run 
+Want to use this file? Simply download it, cd into the directory,  and then run 
+'''
+python server.py
+'''
+From there, you go to localhost:5000, where you can select the currency conversion you want. The program will give you the best conversion rate as well as a nice graph showing the steps that the algorithm took to get that conversion.  
+
+Don't want to deal with the flask interface? In that case, run the following:
 '''
 python -i max_exchange.py
 '''
